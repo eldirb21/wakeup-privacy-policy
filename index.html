@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kebijakan Privasi - WakeUp Alarm & Kebiasaan</title>
+    <style>
+      :root {
+        --bg: #0b0f17;
+        --card-bg: #161d2a;
+        --text: #f1f5f9;
+        --text-muted: #94a3b8;
+        --primary: #10b981;
+        --primary-light: #34d399;
+        --border: #263345;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+        margin: 0;
+        padding: 40px 20px;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: var(--card-bg);
+        padding: 40px;
+        border-radius: 20px;
+        border: 1px solid var(--border);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+      }
+      h1 {
+        color: var(--primary-light);
+        font-size: 28px;
+        margin-top: 0;
+        margin-bottom: 8px;
+      }
+      .date {
+        color: var(--text-muted);
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+      h2 {
+        color: var(--primary);
+        font-size: 20px;
+        margin-top: 28px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 8px;
+      }
+      p,
+      li {
+        color: var(--text-muted);
+        font-size: 15px;
+      }
+      strong {
+        color: var(--text);
+      }
+      ul {
+        padding-left: 20px;
+      }
+      .badge {
+        display: inline-block;
+        background: rgba(16, 185, 129, 0.15);
+        color: var(--primary);
+        padding: 4px 12px;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="badge">Kebijakan Privasi Resmi</div>
+      <h1>Kebijakan Privasi - WakeUp</h1>
+      <div class="date">Terakhir diperbarui: 17 Oktober 2026</div>
+
+      <p>
+        Selamat datang di <strong>WakeUp</strong> ("Aplikasi"). Kami sangat
+        menghargai privasi Anda dan berkomitmen penuh untuk melindungi informasi
+        yang terkait dengan penggunaan aplikasi kami.
+      </p>
+
+      <h2>1. Prinsip Utama: 100% Offline-First & Tanpa Pelacakan</h2>
+      <p>
+        Aplikasi WakeUp dibangun dengan prinsip <em>Offline-First</em>. Kami
+        <strong
+          >tidak mengumpulkan, menyimpan, mentransmisikan, atau menjual</strong
+        >
+        data pribadi Anda ke server jarak jauh (remote server) atau pihak ketiga
+        mana pun.
+      </p>
+
+      <h2>2. Data yang Disimpan di Perangkat Anda</h2>
+      <p>
+        Seluruh data berikut hanya tersimpan secara lokal di memori internal
+        perangkat Anda menggunakan database aman SQLite:
+      </p>
+      <ul>
+        <li>
+          <strong>Data Alarm:</strong> Waktu alarm, judul, preferensi hari, dan
+          nada dering pilihan Anda.
+        </li>
+        <li>
+          <strong>Catatan Pagi (Notes):</strong> Tulisan, judul, kategori, dan
+          warna catatan yang Anda buat.
+        </li>
+        <li>
+          <strong>Pelacak Disiplin (Journeys):</strong> Waktu bangun nyata,
+          target waktu, skor disiplin, dan catatan suasana hati (mood).
+        </li>
+        <li>
+          <strong>Pengaturan Aplikasi:</strong> Pilihan tema (terang/gelap),
+          warna aksen, dan bahasa antarmuka.
+        </li>
+      </ul>
+
+      <h2>3. Izin Sistem Android (System Permissions)</h2>
+      <p>
+        Untuk menjalankan fungsi alarm secara andal, WakeUp memerlukan beberapa
+        izin sistem Android:
+      </p>
+      <ul>
+        <li>
+          <strong>SCHEDULE_EXACT_ALARM & USE_EXACT_ALARM:</strong> Digunakan
+          secara eksklusif untuk menjadwalkan alarm agar berdering tepat waktu
+          sesuai detik yang telah Anda tetapkan tanpa tertunda oleh optimasi
+          baterai (Doze Mode).
+        </li>
+        <li>
+          <strong
+            >SYSTEM_ALERT_WINDOW (Tampilkan di atas aplikasi lain):</strong
+          >
+          Digunakan untuk menampilkan antarmuka alarm layar penuh (Full-Screen
+          Alarm Modal) seketika alarm aktif saat Anda sedang menggunakan
+          aplikasi lain atau di layar beranda.
+        </li>
+        <li>
+          <strong>WAKE_LOCK & Layar Kunci:</strong> Digunakan untuk menyalakan
+          layar ponsel Anda secara otomatis saat alarm berdering di atas layar
+          yang terkunci.
+        </li>
+        <li>
+          <strong>VIBRATE:</strong> Digunakan untuk mengaktifkan getaran
+          perangkat saat alarm berdering.
+        </li>
+        <li>
+          <strong>Penyimpanan / Pemilih Berkas (File Picker):</strong> Hanya
+          digunakan saat Anda memilih nada dering kustom dari file audio lokal
+          di perangkat Anda. Aplikasi tidak membaca berkas lain.
+        </li>
+      </ul>
+
+      <h2>4. Layanan Pihak Ketiga & Analitik</h2>
+      <p>
+        WakeUp <strong>tidak menggunakan</strong> SDK analitik pihak ketiga
+        (seperti Google Analytics for Firebase, Facebook SDK, atau jaringan
+        periklanan) untuk melacak perilaku Anda.
+      </p>
+
+      <h2>5. Keamanan Data</h2>
+      <p>
+        Karena seluruh data disimpan di penyimpanan lokal perangkat Anda,
+        keamanan data Anda sepenuhnya terlindungi oleh sistem keamanan bawaan
+        sistem operasi Android perangkat Anda.
+      </p>
+
+      <h2>6. Penghapusan Data</h2>
+      <p>
+        Anda dapat menghapus seluruh data yang tersimpan di aplikasi kapan saja
+        melalui menu
+        <strong>Pengaturan &gt; Kelola Data &gt; Hapus Semua Data</strong> di
+        dalam aplikasi, atau dengan mencopot pemasangan (uninstall) aplikasi
+        dari perangkat Anda.
+      </p>
+
+      <h2>7. Kontak Pengembang</h2>
+      <p>
+        Jika Anda memiliki pertanyaan seputar Kebijakan Privasi ini, silakan
+        hubungi kami melalui email pengembang di:
+        <strong>eldir.dev.io@gmail.com</strong>
+      </p>
+    </div>
+  </body>
+</html>
